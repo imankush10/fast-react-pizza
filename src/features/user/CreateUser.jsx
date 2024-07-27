@@ -1,11 +1,16 @@
 import { useState } from 'react';
 import Button from '../../ui/Button';
+import { updateUserName } from './userSlice';
 
 function CreateUser() {
   const [username, setUsername] = useState('');
 
   function handleSubmit(e) {
     e.preventDefault();
+
+    if (!username) return;
+
+    updateUserName(username);
   }
 
   return (
