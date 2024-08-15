@@ -3,7 +3,7 @@ import Button from '../../ui/Button';
 import { formatCurrency } from '../../utils/helpers';
 import { addItem, getCurrentQuantity } from '../cart/cartSlice';
 import DeleteItem from '../../ui/DeleteItem';
-import UpdateQuantity from '../cart/updateQuantity';
+import UpdateQuantity from '../cart/UpdateQuantity';
 
 function MenuItem({ pizza }) {
   const dispatch = useDispatch();
